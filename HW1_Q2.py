@@ -38,6 +38,7 @@ while payCode>0:
         pay2=300+commission
         print("The weekly amount that needs to be paid to the employee: ",pay2,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
+        
     if payCode==3:
         normalPay=float(input("Enter the hourly pay-rate: "))
         overPay=normalPay*1.25
@@ -48,6 +49,7 @@ while payCode>0:
             pay3=hours*normalPay    
         print("The weekly amount that needs to be paid to the employee: ",pay3,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
+        
     if payCode==4:
         pay4=float(input("Enter the weekly salary for the manager: "))
         print("The weekly amount that needs to be paid to the employee: ",pay4,"dollars")

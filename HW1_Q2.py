@@ -24,6 +24,13 @@ Created on Fri Dec 25 10:56:17 2020
 payCode=float(input("Enter the pay-code (enter -1 to end): "))
 total=0
 
+payCode=float(input("Enter the pay-code (enter -1 to end): "))
+total=0
+payCode1Total=0
+payCode2Total=0
+payCode3Total=0
+payCode4Total=0
+
 while payCode>0:
 
     if payCode==1:
@@ -31,6 +38,7 @@ while payCode>0:
         pieceCost=float(input("Enter the amount needs to be paid to the employee for each piece: "))
         pay1=numItems*pieceCost
         total=pay1+total
+        payCode1Total=payCode1Total+pay1
         print("The weekly amount that needs to be paid to the employee: ",pay1,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
         
@@ -42,7 +50,7 @@ while payCode>0:
         print("The weekly amount that needs to be paid to the employee: ",pay2,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
         total=pay2+total
-        
+        payCode2Total=payCode2Total+pay2
         
     if payCode==3:
         normalPay=float(input("Enter the hourly pay-rate: "))
@@ -55,16 +63,21 @@ while payCode>0:
         print("The weekly amount that needs to be paid to the employee: ",pay3,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
         total=pay3+total
-        
+        payCode3Total=payCode3Total+pay3
         
     if payCode==4:
         pay4=float(input("Enter the weekly salary for the manager: "))
         print("The weekly amount that needs to be paid to the employee: ",pay4,"dollars")
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
         total=pay4+total
+        payCode4Total=payCode4Total+pay4
         
     if payCode==-1:
         print("The total amount paid to employees:",total,"dollars")
+        print("Pay-code-1 Employees were paid:",payCode1Total,"dollars")
+        print("Pay-code-2 Employees were paid:",payCode2Total,"dollars")
+        print("Pay-code-3 Employees were paid:",payCode3Total,"dollars")
+        print("Pay-code-4 Employees were paid:",payCode4Total,"dollars")
         
  
         

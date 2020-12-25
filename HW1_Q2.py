@@ -54,10 +54,10 @@ while payCode>0:
         payCode=float(input("Enter the pay-code (enter -1 to end): "))
         
     if payCode==-1:
-        code1Emp=float(input("Enter the number of employees paid by piecework: "))
-        code2Emp=float(input("Enter the number of employees paid commission-based: "))
-        code3Emp=float(input("Enter the number of employees paid by hourly rate: "))
-        code4Emp=float(input("Enter the number of employees paid salary-based: "))
+        code1Emp=float(input("Enter the number of employees who got paid based on the number of pieceworks: "))
+        code2Emp=float(input("Enter the number of employees who got paid commission-based: "))
+        code3Emp=float(input("Enter the number of employees who got paid based on hourly rate: "))
+        code4Emp=float(input("Enter the number of employees who got paid salary-based: "))
         
         payTotal=code1Emp*pay1+code2Emp*pay2+code3Emp*pay3+code4Emp*pay4
         
